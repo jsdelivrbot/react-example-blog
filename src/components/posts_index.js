@@ -8,7 +8,7 @@ import { Link } from 'react-router';
 
 class PostsIndex extends Component {
 
-  // life cycle events
+  // life cycle event
   componentWillMount() {
     this.props.fetchPosts();
   }
@@ -48,10 +48,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, { fetchPosts })(PostsIndex);
-
-// removed this code below and apply the fetchPosts inside of the connect
-// and it works the same
-
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ fetchPosts }, dispatch);
-// }

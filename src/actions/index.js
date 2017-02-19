@@ -15,6 +15,23 @@ export function fetchPosts() {
     type: FETCH_POSTS,
     payload: request
   }
+
+
+  // REDUX THUNK
+  //https://github.com/gaearon/redux-thunk
+
+  // todo: implement this and see how it works
+
+
+
+  // return (dispatch) => {
+  //   request.then(({data}) => {
+  //     dispatch({
+  //       type: FETCH_POSTS,
+  //       payload: request
+  //     })
+  //   });
+  // }
 }
 
 export function createPost(props) {
